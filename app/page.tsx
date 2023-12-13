@@ -10,10 +10,10 @@ export default function Home() {
         animate={{ opacity: 1, y: 0 }}
         exit={{ opacity: 0, y: "100%" }}
         transition={{ duration: 1, delay: 0.1 }}
-        className="w-full md:w-8/12 lg:w-1/2 flex flex-col gap-y-2 mt-4"
+        className="w-full md:w-8/12 lg:w-1/2 flex flex-col gap-y-2 mt-8"
       >
-        <h1 className="text-xl md:text-2xl lg:text-3xl font-medium">Hi!👋 </h1>
-        <p className="text-3xl md:text-4xl lg:text-5xl font-bold">
+        <h1 className="text-2xl lg:text-3xl font-medium">Hi!👋 </h1>
+        <p className="text-4xl lg:text-5xl font-bold">
           I&apos;m Hafiedz Mada M
         </p>
         <TypeAnimation
