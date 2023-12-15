@@ -21,7 +21,7 @@ export default function Home() {
           transition={{ duration: 0.5, delay: 0.1 }}
           className="w-full md:w-8/12 lg:w-1/2 flex flex-col gap-y-2 mt-8 px-4"
         >
-          <h1 className="text-2xl lg:text-3xl font-medium">Hi!</h1>
+          <h1 className="text-2xl lg:text-3xl font-medium">Hi!👋</h1>
           <p className="text-4xl lg:text-5xl font-bold">
             I&apos;m Hafiedz Mada M
           </p>
@@ -33,10 +33,6 @@ export default function Home() {
               "Frontend Developer",
               1000,
               "Lifelong Learner",
-              1000,
-              "Ketoprak Eater",
-              1000,
-              "Dota 2 Offlaner",
               1000,
             ]}
             wrapper="span"

@@ -24,8 +24,8 @@ const Navbar = () => {
       title: "Projects",
     },
     {
-      url: "resume",
-      title: "Resume",
+      url: "resources",
+      title: "Resources",
     },
   ];
 
@@ -42,7 +42,7 @@ const Navbar = () => {
           <Link
             href={`${"/" + link.url}`}
             key={index}
-            className={`${newPathname === link.url && "border-b-2 border-black "}`}
+            className={`${newPathname === link.url && "border-b border-gray-300 dark:border-gray-400"}`}
           >
             {link.title}
           </Link>
@@ -52,6 +52,7 @@ const Navbar = () => {
         onClick={() => (theme == "dark" ? setTheme("light") : setTheme("dark"))}
         className="text-center shadow-md dark:shadow-none hover:bg-gray-200 dark:hover:bg-gray-600 transition-all duration-100 text-gray-800 dark:text-white p-2 rounded-full dark:border-2 dark:border-gray-500"
         whileHover={{ scale: 1.1 }}
+        whileTap={{scale: 0.7}}
       >
         {theme === "dark" ? <SunIcon /> : <MoonIcon />}
       </motion.button>

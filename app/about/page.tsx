@@ -17,7 +17,7 @@ const AboutPage = () => {
         className="container mx-auto w-full md:w-8/12 lg:w-1/2 flex flex-col gap-y-2 mt-8 px-4"
       >
         <section className="mb-16">
-          <h2 className="text-2xl font-semibold">Jobs</h2>
+          <h2 className="text-2xl font-semibold">💼Jobs</h2>
           <div className="relative mx-8 my-4">
             <div
               className="border-r-2 border-gray-500 dark:border-gray-200 absolute h-full top-0 mt-2"
@@ -62,7 +62,7 @@ const AboutPage = () => {
           </div>
         </section>
         <section>
-          <h2 className="text-2xl font-semibold">Education</h2>
+          <h2 className="text-2xl font-semibold">🎓Education</h2>
           <div className="relative mx-8 my-4">
             <div
               className="border-r-2 border-gray-500 dark:border-gray-200 absolute h-full top-0 mt-2"
