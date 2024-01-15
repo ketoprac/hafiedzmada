@@ -78,22 +78,15 @@ const ResumePage = () => {
   ];
 
   return (
-    <AnimatePresence>
-      <motion.div
-        initial={{ opacity: 0, y: "100%" }}
-        animate={{ opacity: 1, y: 0 }}
-        exit={{ opacity: 0, y: "100%" }}
-        transition={{ duration: 0.5, delay: 0.1 }}
-        className="container mx-auto w-full md:w-8/12 lg:w-1/2 flex flex-col gap-y-2 mt-8 px-4"
-      >
+      <>
         <h1 className="font-semibold text-2xl lg:text-3xl mb-2">
-          Learning Resources I personally recommend👇
+          Learning Resources I recommend👇
         </h1>
         {resources?.map((resource, index) => (
           <Link
             href={resource.link}
             target="_blank"
-            className="border p-4 dark:border-gray-600 mb-2"
+            className="border p-4 dark:border-gray-600 mb-2 dark:hover:bg-gray-800 hover:bg-gray-200"
             key={index}
           >
             <div>
@@ -109,8 +102,7 @@ const ResumePage = () => {
             </div>
           </Link>
         ))}
-      </motion.div>
-    </AnimatePresence>
+      </>
   );
 };
 

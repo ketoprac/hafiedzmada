@@ -37,12 +37,12 @@ const Navbar = () => {
     exit={{ opacity: 0, y: -20 }}
     transition={{ duration: 0.3 }}
     className="flex items-center gap-x-4 px-16 pb-4 pt-8">
-      <nav className="flex shadow-md dark:border-gray-500 dark:border-2 px-8 py-2 rounded-2xl gap-x-3 text-sm font-medium">
+      <nav className="flex dark:border-gray-500 border px-8 py-2 gap-x-3 text-sm font-medium rounded">
         {navLink?.map((link, index) => (
           <Link
             href={`${"/" + link.url}`}
             key={index}
-            className={`${newPathname === link.url && "border-b border-gray-300 dark:border-gray-400"}`}
+            className={`${newPathname === link.url && "border-b dark:border-gray-400"}`}
           >
             {link.title}
           </Link>
@@ -50,8 +50,8 @@ const Navbar = () => {
       </nav>
       <motion.button
         onClick={() => (theme == "dark" ? setTheme("light") : setTheme("dark"))}
-        className="text-center shadow-md dark:shadow-none hover:bg-gray-200 dark:hover:bg-gray-600 transition-all duration-100 text-gray-800 dark:text-white p-2 rounded-full dark:border-2 dark:border-gray-500"
-        whileHover={{ scale: 1.1 }}
+        className="text-center hover:bg-gray-200 dark:hover:bg-gray-600 transition-all duration-100 text-gray-800 dark:text-white p-2 rounded-full border dark:border-gray-500"
+        whileHover={{ scale: 1.3 }}
         whileTap={{scale: 0.7}}
       >
         {theme === "dark" ? <SunIcon /> : <MoonIcon />}
