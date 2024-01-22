@@ -37,6 +37,12 @@ const ProjectsPage = () => {
       repository: "https://github.com/ketoprac/frontend-test",
     },
     {
+      title: "Vue Expense Tracker",
+      description: "Expense Tracker App - Vue",
+      demo: "https://vue-expense-tracker-nine.vercel.app/",
+      repository: "https://github.com/ketoprac/vue-expense-tracker",
+    },
+    {
       title: "Jobless UI",
       description: "Simple Job Portal UI - React, Tailwind",
       demo: "https://jobless-ui.vercel.app/",
