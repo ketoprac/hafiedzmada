@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useEffect } from "react";
 
 const ProjectsPage = () => {
-  const projects = [
+  const featuredProjects = [
     {
       title: "AI SaaS",
       description:
@@ -13,22 +13,31 @@ const ProjectsPage = () => {
       repository: "https://github.com/ketoprac/ai-saas",
     },
     {
-      title: "Next.js E-commerce",
+      title: "Vetements Store",
       description: "E-commerce Web App - Next.js, Prisma, Tailwind",
       demo: "#",
       repository: "#",
-    },
-    {
-      title: "Netflix UI Clone",
-      description: "Netflix Custom UI Clone - React, Tailwind",
-      demo: "https://netflix-ui-clone-green.vercel.app/",
-      repository: "https://github.com/ketoprac/netflix-ui-clone",
     },
     {
       title: "StoreGG",
       description: "Gaming Online Shop - Next.js",
       demo: "https://storegg-sample.vercel.app/",
       repository: "https://github.com/ketoprac/storegg-sample",
+    },
+    {
+      title: "Movie App",
+      description: "Movie Web App - Vue, Tailwind, TMDb, Clerk",
+      demo: "https://vue-movie-app-hm.vercel.app/",
+      repository: "https://github.com/ketoprac/vue-movie-app"
+    }
+  ];
+
+  const miniProjects = [
+    {
+      title: "Netflix UI Clone",
+      description: "Netflix Custom UI Clone - React, Tailwind",
+      demo: "https://netflix-ui-clone-green.vercel.app/",
+      repository: "https://github.com/ketoprac/netflix-ui-clone",
     },
     {
       title: "Github Repository Explorer",
@@ -78,7 +87,7 @@ const ProjectsPage = () => {
       demo: "https://react-emoji-finder.vercel.app/",
       repository: "https://github.com/ketoprac/react-emoji-finder",
     },
-  ];
+  ]
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -90,7 +99,37 @@ const ProjectsPage = () => {
       🚀Featured Projects
       </h1>
       <div>
-        {projects.map((project, index) => (
+        {featuredProjects.map((project, index) => (
+          <div key={index} className="border p-4 dark:border-gray-600 mb-2 dark:hover:bg-gray-800 hover:bg-gray-200">
+            <h1 className="text-xl font-semibold">{project.title}</h1>
+            <p className="text-sm text-gray-500 dark:text-gray-300">{project.description}</p>
+            <div className="flex items-center mt-2 text-sm">
+              <Link
+                target="_blank"
+                href={project.repository}
+                className="flex items-center text-gray-500 dark:text-gray-200 hover:text-gray-700"
+              >
+                <GitHubLogoIcon className="w-4 h-4 mr-1" />
+                <span>Repository</span>
+              </Link>
+              <span className="mx-2">|</span>
+              <Link
+                target="_blank"
+                href={project.demo}
+                className="flex items-center text-gray-500 dark:text-gray-200 hover:text-gray-700"
+              >
+                <span className="mr-1">Demo</span>
+                <ExternalLinkIcon className="w-4 h-4" />
+              </Link>
+            </div>
+          </div>
+        ))}
+      </div>
+      <h1 className="font-semibold text-2xl lg:text-3xl mb-2 mt-8">
+      🌟Mini Projects
+      </h1>
+      <div>
+        {miniProjects.map((project, index) => (
           <div key={index} className="border p-4 dark:border-gray-600 mb-2 dark:hover:bg-gray-800 hover:bg-gray-200">
             <h1 className="text-xl font-semibold">{project.title}</h1>
             <p className="text-sm text-gray-500 dark:text-gray-300">{project.description}</p>
