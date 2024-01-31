@@ -42,7 +42,7 @@ const Navbar = () => {
           <Link
             href={`${"/" + link.url}`}
             key={index}
-            className={`${newPathname === link.url && "border-b dark:border-gray-400"}`}
+            className={`pb-1 ${newPathname === link.url && "border-b-2 dark:border-gray-500"}`}
           >
             {link.title}
           </Link>
