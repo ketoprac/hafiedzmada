@@ -1,6 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
-import { MoonIcon, SunIcon } from "@radix-ui/react-icons";
+import { SunIcon } from "@radix-ui/react-icons";
 import { useTheme } from "next-themes";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -52,7 +52,7 @@ const Navbar = () => {
         onClick={() => (theme == "dark" ? setTheme("light") : setTheme("dark"))}
         className="text-center hover:bg-gray-200 dark:hover:bg-gray-600 transition-all duration-100 text-gray-800 dark:text-white p-2 rounded dark:border-gray-500"
       >
-        {theme === "dark" ? <SunIcon /> : <MoonIcon />}
+        {theme === "dark" ? <SunIcon /> : <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-moon"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>}
       </button>
     </motion.div>
   );
