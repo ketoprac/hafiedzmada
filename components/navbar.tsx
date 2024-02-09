@@ -49,6 +49,7 @@ const Navbar = () => {
         ))}
       </nav>
       <button
+        id="theme-switch"
         onClick={() => (theme == "dark" ? setTheme("light") : setTheme("dark"))}
         className="text-center hover:bg-gray-200 dark:hover:bg-gray-600 transition-all duration-100 text-gray-800 dark:text-white p-2 rounded dark:border-gray-500"
       >

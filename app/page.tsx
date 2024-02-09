@@ -48,16 +48,28 @@ export default function Home() {
         Let&apos;s Connect!👇
       </h1>
       <div className="flex gap-x-2">
-        <Link href="https://linkedin.com/in/hafiedzmada" target="_blank">
+        <Link
+          href="https://linkedin.com/in/hafiedzmada"
+          target="_blank"
+          aria-label="LinkedIn profile link"
+        >
           <LinkedInLogoIcon className="w-6 h-6 hover:text-gray-700 dark:hover:text-gray-400" />
         </Link>
-        <Link href="https://github.com/ketoprac" target="_blank">
+        <Link href="https://github.com/ketoprac" target="_blank" id="github">
           <GitHubLogoIcon className="w-6 h-6 hover:text-gray-700 dark:hover:text-gray-400" />
         </Link>
-        <Link href="https://instagram.com/hafiedzmada" target="_blank">
+        <Link
+          href="https://instagram.com/hafiedzmada"
+          target="_blank"
+          aria-label="Github profile link"
+        >
           <InstagramLogoIcon className="w-6 h-6 hover:text-gray-700 dark:hover:text-gray-400" />
         </Link>
-        <Link href="https://twitter.com/hafiedzmada" target="_blank">
+        <Link
+          href="https://twitter.com/hafiedzmada"
+          target="_blank"
+          aria-label="Twitter profile link"
+        >
           <TwitterLogoIcon className="w-6 h-6 hover:text-gray-700 dark:hover:text-gray-400" />
         </Link>
       </div>

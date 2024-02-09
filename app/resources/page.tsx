@@ -3,7 +3,6 @@ import { ArrowTopRightIcon } from "@radix-ui/react-icons";
 import Link from "next/link";
 import { useEffect } from "react";
 import { resources, books } from "@/utils/data";
-
 const ResumePage = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
