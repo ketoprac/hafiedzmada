@@ -8,7 +8,7 @@ export const featuredProjects = [
   {
     title: "Vetements Store",
     description: "E-commerce Web App - Next.js, Prisma, Tailwind, Midtrans, Auth.js",
-    demo: "https://vetements-store.vercel.app/",
+    demo: "https://vetements.hafiedz.my.id/",
     repository: "#",
   },
   {
@@ -20,7 +20,7 @@ export const featuredProjects = [
   {
     title: "Movie App",
     description: "Movie Web App - Vue, Tailwind, TMDb, Clerk",
-    demo: "https://vue-movie-app-hm.vercel.app/",
+    demo: "https://movie.hafiedz.my.id/",
     repository: "https://github.com/ketoprac/vue-movie-app",
   },
 ];
