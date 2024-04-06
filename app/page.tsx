@@ -2,6 +2,7 @@
 import { TypeAnimation } from "react-type-animation";
 import { useEffect } from "react";
 import {
+  EnvelopeClosedIcon,
   GitHubLogoIcon,
   InstagramLogoIcon,
   LinkedInLogoIcon,
@@ -16,8 +17,8 @@ export default function Home() {
 
   return (
     <>
-      <h1 className="text-2xl lg:text-3xl font-medium">Hi!👋</h1>
-      <p className="text-4xl lg:text-5xl font-bold">I&apos;m Hafiedz Mada M</p>
+      <h1 className="text-2xl lg:text-3xl font-medium">Nice to meet you!👋</h1>
+      <p className="text-4xl lg:text-5xl font-semibold">I&apos;m Hafiedz Mada</p>
       <TypeAnimation
         sequence={[
           "Frontend Developer",
@@ -44,33 +45,40 @@ export default function Home() {
         experiences and always eager to explore new opportunities in the
         frontend development realm.
       </p>
-      <h1 className="font-semibold text-gray-800 dark:text-gray-100">
+      <h1 className="text-gray-800 dark:text-gray-100 text-2xl lg:text-3xl mt-8">
         Let&apos;s Connect!👇
       </h1>
-      <div className="flex gap-x-2">
+      <div className="flex lg:gap-x-2 gap-x-4">
+        <Link
+          href="mailto:hafiedzmada@gmail.com"
+          target="_blank"
+          aria-label="Email"
+        >
+          <EnvelopeClosedIcon className="w-6 h-6 hover:text-gray-700 dark:hover:text-gray-400 hover:rotate-6 duration-150" />
+        </Link>
         <Link
           href="https://linkedin.com/in/hafiedzmada"
           target="_blank"
           aria-label="LinkedIn profile link"
         >
-          <LinkedInLogoIcon className="w-6 h-6 hover:text-gray-700 dark:hover:text-gray-400" />
+          <LinkedInLogoIcon className="w-6 h-6 hover:text-gray-700 dark:hover:text-gray-400 hover:rotate-6 duration-150" />
         </Link>
         <Link href="https://github.com/ketoprac" target="_blank" id="github">
-          <GitHubLogoIcon className="w-6 h-6 hover:text-gray-700 dark:hover:text-gray-400" />
+          <GitHubLogoIcon className="w-6 h-6 hover:text-gray-700 dark:hover:text-gray-400 hover:rotate-6 duration-150" />
         </Link>
         <Link
           href="https://instagram.com/hafiedzmada"
           target="_blank"
           aria-label="Github profile link"
         >
-          <InstagramLogoIcon className="w-6 h-6 hover:text-gray-700 dark:hover:text-gray-400" />
+          <InstagramLogoIcon className="w-6 h-6 hover:text-gray-700 dark:hover:text-gray-400 hover:rotate-6 duration-150" />
         </Link>
         <Link
           href="https://twitter.com/hafiedzmada"
           target="_blank"
           aria-label="Twitter profile link"
         >
-          <TwitterLogoIcon className="w-6 h-6 hover:text-gray-700 dark:hover:text-gray-400" />
+          <TwitterLogoIcon className="w-6 h-6 hover:text-gray-700 dark:hover:text-gray-400 hover:rotate-6 duration-150" />
         </Link>
       </div>
     </>

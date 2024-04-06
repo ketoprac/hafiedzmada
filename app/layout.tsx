@@ -4,12 +4,14 @@ import "./globals.css";
 import Navbar from "@/components/navbar";
 import Providers from "@/providers/Providers";
 import NextTopLoader from "nextjs-toploader";
+import PageAnimatePresence from "@/components/HOC/PageAnimatePresence";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Hafiedz Mada - Portfolio",
-  description: "Welcome to the portfolio of Hafiedz Mada showcasing my projects and skills.",
+  description:
+    "Welcome to the portfolio of Hafiedz Mada, showcasing my projects and skills.",
 };
 
 export default function RootLayout({
@@ -21,11 +23,13 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
         <Providers>
-        <NextTopLoader height={4} color="#000" showSpinner={false} />
-          <main className="flex min-h-screen flex-col items-center">
-            <Navbar />
-            {children}
-          </main>
+          <NextTopLoader height={4} color="#000" showSpinner={false} />
+              <PageAnimatePresence>
+            <main className="flex min-h-screen flex-col items-center">
+              <Navbar />
+              {children}
+            </main>
+              </PageAnimatePresence>
         </Providers>
       </body>
     </html>

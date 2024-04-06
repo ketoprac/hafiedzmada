@@ -148,6 +148,12 @@ export const resources = [
     description: "Short useful videos about Next.js.",
     language: "English",
   },
+  {
+    title: "Daily Web Coding",
+    link: "https://www.youtube.com/@DailyWebCoding",
+    description: "Daily web coding is focusing on doing stuff relate to latest web technologies.",
+    language: "English"
+  }
 ];
 
 export const books = [
