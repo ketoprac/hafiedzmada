@@ -25,25 +25,25 @@ export default function Home() {
           1000,
           "Lifelong Learner",
           1000,
-          "Ketoprak Enjoyer",
+          "Ketoprak Eater",
           1000,
         ]}
         wrapper="span"
         speed={50}
         repeat={Infinity}
-        className="text-xl md:text-2xl lg:text-3xl font-medium text-gray-800 dark:text-gray-200"
+        className="text-xl md:text-2xl lg:text-3xl font-medium text-gray-600 dark:text-gray-400"
       />
       <p className="text-justify text-gray-600 dark:text-gray-300">
-        An experienced Frontend Developer based in Indonesia🇮🇩 with a year of
+        An experienced Frontend Developer based in Indonesia🇮🇩 with two years of
         hands-on expertise in building captivating user interfaces. My primary
         focus is on{" "}
         <span className="font-bold text-black dark:text-white">
-          React, Next.js, Vue and Nuxt
+          React, Next.js and Vue
         </span>
-        , where I&apos;ve honed my skills in creating high-performance web
+        , where I&apos;ve honed my skills in building interactive web
         applications. I&apos;m passionate about crafting seamless digital
-        experiences and always eager to explore new opportunities in the
-        frontend development realm.
+        experiences and always eager to explore new opportunities in
+        frontend development.
       </p>
       <h1 className="text-gray-800 dark:text-gray-100 text-2xl lg:text-3xl mt-8">
         Let&apos;s Connect!👇

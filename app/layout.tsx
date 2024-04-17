@@ -1,12 +1,9 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/navbar";
 import Providers from "@/providers/Providers";
 import NextTopLoader from "nextjs-toploader";
 import PageAnimatePresence from "@/components/HOC/PageAnimatePresence";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Hafiedz Mada - Portfolio",
@@ -21,7 +18,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={inter.className}>
+      <body>
         <Providers>
           <NextTopLoader height={4} color="#000" showSpinner={false} />
               <PageAnimatePresence>
