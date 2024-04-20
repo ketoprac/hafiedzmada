@@ -87,6 +87,20 @@ const AboutPage = () => {
                 Graduated: 2022 GPA: 3.91
               </div>
             </li>
+            <li className="mb-4">
+              <div className="flex items-center mb-1">
+                <div className="bg-gray-500 dark:bg-gray-200 rounded-full h-4 w-4 ml-2" />
+                <div className="flex-1 ml-4 font-medium">
+                  Associate Degree of Information System
+                </div>
+              </div>
+              <div className="ml-12 text-gray-600 dark:text-gray-300">
+                Universitas Bina Sarana Informatika
+              </div>
+              <div className="ml-12 text-gray-500 dark:text-gray-400">
+                Graduated: 2022 GPA: 3.91
+              </div>
+            </li>
           </ul>
         </div>
       </section>
