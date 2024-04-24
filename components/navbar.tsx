@@ -31,8 +31,8 @@ const Navbar = () => {
 
   const { theme, setTheme } = useTheme();
   return (
-    <div className="flex items-center px-12 py-1.5 mt-8 border border-opacity-50 border-gray-600 dark:border-gray-200 rounded-full">
-      <nav className="flex p-2 gap-x-3 text-sm font-medium">
+    <div className="flex items-center lg:px-12 px-6 lg:py-1.5 py-1 mt-8 mb-4 border border-opacity-50 border-gray-600 dark:border-gray-200 rounded-full">
+      <nav className="flex p-2 lg:gap-x-3 gap-x-1 font-medium">
         {navLink?.map((link, index) => (
           <Link
             href={`${"/" + link.url}`}

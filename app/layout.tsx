@@ -3,7 +3,6 @@ import "./globals.css";
 import Navbar from "@/components/navbar";
 import Providers from "@/providers/Providers";
 import NextTopLoader from "nextjs-toploader";
-import PageAnimatePresence from "@/components/HOC/PageAnimatePresence";
 
 export const metadata: Metadata = {
   title: "Hafiedz Mada - Portfolio",
@@ -21,12 +20,10 @@ export default function RootLayout({
       <body>
         <Providers>
           <NextTopLoader height={4} color="#000" showSpinner={false} />
-              <PageAnimatePresence>
             <main className="flex min-h-screen flex-col items-center">
               <Navbar />
               {children}
             </main>
-              </PageAnimatePresence>
         </Providers>
       </body>
     </html>

@@ -3,7 +3,7 @@ import { ArrowTopRightIcon } from "@radix-ui/react-icons";
 import Link from "next/link";
 import { useEffect } from "react";
 import { resources, books } from "@/utils/data";
-import { motion } from "framer-motion";
+import BackToTopButton from "@/components/back-to-top-button";
 
 const ResumePage = () => {
   useEffect(() => {
@@ -12,17 +12,13 @@ const ResumePage = () => {
 
   return (
     <>
+      <BackToTopButton />
       <h1 className="font-semibold text-2xl lg:text-3xl mb-2">
         Learning Resources👇
       </h1>
       {resources?.map((resource, index) => (
         <Link href={resource.link} target="_blank" key={index}>
-          <motion.div
-            initial={{ opacity: 0, scale: 0.6 }}
-            animate={{ opacity: 1, scale: 1 }}
-            exit={{ opacity: 0, scale: 0.6 }}
-            transition={{ type: "tween", duration: 0.5 }}
-            whileHover={{ scale: 1.02 }}
+          <div
             className="p-4 bg-gray-100/60 hover:bg-gray-200 dark:bg-black/60 mb-2 dark:hover:bg-black/80"
           >
             <div>
@@ -36,18 +32,13 @@ const ResumePage = () => {
                 Language: {resource.language}
               </p>
             </div>
-          </motion.div>
+          </div>
         </Link>
       ))}
       <h1 className="font-semibold text-2xl lg:text-3xl mb-2 mt-4">📚Books</h1>
       {books?.map((book, index) => (
         <Link href={book.link} target="_blank" key={index}>
-          <motion.div
-            initial={{ opacity: 0, scale: 0.6 }}
-            animate={{ opacity: 1, scale: 1 }}
-            exit={{ opacity: 0, scale: 0.6 }}
-            transition={{ type: "tween", duration: 0.5 }}
-            whileHover={{ scale: 1.02 }}
+          <div
             className="p-4 bg-gray-100/60 hover:bg-gray-200 dark:bg-black/60 mb-2 dark:hover:bg-black/80"
           >
             <div>
@@ -58,7 +49,7 @@ const ResumePage = () => {
                 {book.author} • {book.category}
               </p>
             </div>
-          </motion.div>
+          </div>
         </Link>
       ))}
     </>

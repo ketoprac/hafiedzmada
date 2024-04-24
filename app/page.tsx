@@ -48,7 +48,7 @@ export default function Home() {
       <h1 className="text-gray-800 dark:text-gray-100 text-2xl lg:text-3xl mt-8">
         Let&apos;s Connect!👇
       </h1>
-      <div className="flex lg:gap-x-2 gap-x-4">
+      <div className="flex gap-x-4">
         <Link
           href="mailto:hafiedzmada@gmail.com"
           target="_blank"
