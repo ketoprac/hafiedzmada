@@ -31,19 +31,20 @@ const Navbar = () => {
 
   const { theme, setTheme } = useTheme();
   return (
-    <div className="flex items-center lg:px-12 px-6 lg:py-1.5 py-1 mt-8 mb-4 border border-opacity-50 border-gray-600 dark:border-gray-200 rounded-full">
+    <div className="flex items-center lg:px-12 px-6 lg:py-1.5 py-1 mt-8 mb-4 rounded">
       <nav className="flex p-2 lg:gap-x-3 gap-x-1 font-medium">
         {navLink?.map((link, index) => (
-          <Link
-            href={`${"/" + link.url}`}
-            key={index}
-            className={`text-gray-600 dark:text-gray-200 py-1 px-2 rounded-full ${
-              newPathname === link.url &&
-              "bg-gray-500 bg-opacity-10 dark:bg-white dark:bg-opacity-10"
-            }`}
-          >
-            {link.title}
-          </Link>
+          <div className="flex flex-col items-center" key={index}>
+            <Link
+              href={`${"/" + link.url}`}
+              className="text-gray-600 dark:text-gray-200 py-1 px-2"
+            >
+              {link.title}
+            </Link>
+            {newPathname === link.url && (
+              <div className="w-5 h-1 bg-green-500 rounded-sm" />
+            )}
+          </div>
         ))}
       </nav>
       <button

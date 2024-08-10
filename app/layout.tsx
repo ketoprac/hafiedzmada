@@ -19,7 +19,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body>
         <Providers>
-          <NextTopLoader height={4} color="#000" showSpinner={false} />
+          <NextTopLoader height={4} color="#22C55E " showSpinner={false} />
             <main className="flex min-h-screen flex-col items-center">
               <Navbar />
               {children}
