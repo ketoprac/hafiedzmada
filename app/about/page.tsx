@@ -11,17 +11,8 @@ const AboutPage = () => {
       <section className="mb-8">
         <h2 className="text-2xl font-semibold">💬 Story</h2>
         <div className="text-justify text-gray-600 dark:text-gray-300 mx-8 my-4">
-          I started my coding journey at the end of 2020, then I discovered I am
-          passionate about software engineering. In early 2021, I got the
-          opportunity to intern at a startup called Kamar Pelajar. It was the
-          first time I collaborated with peers and sharpened my skills; it was
-          quite a journey. In the middle of 2021, I joined the MBKM program at
-          Glints Academy. It was my first time coding React collaboratively, and
-          I found it rewarding since we built this project from scratch with
-          over 40 students. Through this MBKM program, I gained a lot of
-          knowledge, both hard skills and soft skills. Long story short, I
-          graduated at the end of 2022 and got my first full-time job in early
-          2023 as a Frontend Developer at CODE.ID.
+        I began my coding journey in late 2020 and quickly discovered a passion for software engineering. In early 2021, I had the privilege of interning at Kamar Pelajar, a startup where I collaborated with peers and honed my technical skills—an invaluable early experience. Later that year, I joined the MBKM program at Glints Academy, where I participated in building a React-based project from the ground up alongside over 40 students. This experience not only deepened my technical expertise but also enhanced my collaboration, teamwork, and problem-solving skills.
+        After graduating in late 2022, I secured my first full-time role as a Software Engineer at CODE.ID in early 2023. Since then, I have learned a great deal and made significant progress in my role, further refining my skills and contributing to impactful projects. This journey has reinforced my commitment to continuous learning and growth in the software engineering field.
         </div>
       </section>
       <section className="mb-8">
@@ -38,7 +29,7 @@ const AboutPage = () => {
               <div className="flex items-center mb-1">
                 <div className="bg-gray-500 dark:bg-gray-200 rounded-full h-4 w-4 ml-2" />
                 <div className="flex-1 ml-4 font-medium">
-                  Frontend Developer
+                  Software Engineer
                 </div>
               </div>
               <div className="ml-12 text-gray-600 dark:text-gray-300">
@@ -52,7 +43,7 @@ const AboutPage = () => {
               <div className="flex items-center mb-1">
                 <div className="bg-gray-500 dark:bg-gray-200 rounded-full h-4 w-4 ml-2" />
                 <div className="flex-1 ml-4 font-medium">
-                  Frontend Developer
+                  Software Engineer
                 </div>
               </div>
               <div className="ml-12 text-gray-600 dark:text-gray-300">
@@ -66,7 +57,7 @@ const AboutPage = () => {
               <div className="flex items-center mb-1">
                 <div className="bg-gray-500 dark:bg-gray-200 rounded-full h-4 w-4 ml-2" />
                 <div className="flex-1 ml-4 font-medium">
-                  Frontend Developer
+                  Software Engineer
                 </div>
               </div>
               <div className="ml-12 text-gray-600 dark:text-gray-300">
@@ -100,7 +91,7 @@ const AboutPage = () => {
                 Universitas Bina Sarana Informatika
               </div>
               <div className="ml-12 text-gray-500 dark:text-gray-400">
-                Graduated: 2022 GPA: 3.91
+                Graduated: 2022 GPA: 3.91/4.00
               </div>
             </li>
           </ul>
