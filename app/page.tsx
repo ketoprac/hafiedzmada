@@ -9,6 +9,7 @@ import {
   TwitterLogoIcon,
 } from "@radix-ui/react-icons";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Home() {
   useEffect(() => {
@@ -16,14 +17,20 @@ export default function Home() {
   }, []);
 
   return (
-    <>
-      <h1 className="text-2xl lg:text-3xl font-medium">Nice to meet you!👋</h1>
-      <p className="text-4xl lg:text-5xl font-semibold">I&apos;m Hafiedz Mada</p>
+    <div className="space-y-6">
+      <h1 className="text-2xl lg:text-3xl font-semibold flex items-center gap-2">
+        Nice to meet you! <span className="animate-wave">👋</span>
+      </h1>
+
+      <h1 className="text-4xl lg:text-5xl font-extrabold font-jakarta bg-gradient-to-r from-violet-600 via-green-500 to-purple-600 text-transparent bg-clip-text animate-gradient bg-300% duration-150">
+        I&apos;m Hafiedz Mada
+      </h1>
+
       <TypeAnimation
         sequence={[
           "Frontend Developer",
           1000,
-          "Lifelong Learner",
+          "Software Engineer",
           1000,
           "Ketoprak Eater",
           1000,
@@ -31,56 +38,90 @@ export default function Home() {
         wrapper="span"
         speed={50}
         repeat={Infinity}
-        className="text-xl md:text-2xl lg:text-3xl font-medium text-gray-600 dark:text-gray-400"
+        className="text-xl md:text-2xl lg:text-3xl font-medium text-gray-600 dark:text-gray-300"
       />
-      <p className="text-justify text-gray-600 dark:text-gray-300">
-        An experienced Frontend Developer based in Indonesia🇮🇩 with two years of
-        hands-on expertise in building captivating user interfaces. My primary
-        focus is on{" "}
+
+      <p className="text-justify text-gray-600 dark:text-gray-300 leading-relaxed max-w-full">
+        Web developer from Indonesia 🇮🇩 with two years of experience crafting
+        modern web applications. Specializing in{" "}
         <span className="font-bold text-black dark:text-white">
-          React, Next.js and Vue
+          React and Next.js
         </span>
-        , where I&apos;ve honed my skills in building interactive web
-        applications. I&apos;m passionate about crafting seamless digital
-        experiences and always eager to explore new opportunities in
-        frontend development.
+        , with practical experience in{" "}
+        <span className="font-bold text-black dark:text-white">
+          Angular, NestJS, and Vue.
+        </span>{" "}
+        I focus on building effective, accessible web solutions while keeping up
+        with modern development practices.
       </p>
-      <h1 className="text-gray-800 dark:text-gray-100 text-2xl lg:text-3xl mt-8">
-        Let&apos;s Connect!👇
-      </h1>
-      <div className="flex gap-x-4">
-        <Link
-          href="mailto:hafiedzmada@gmail.com"
-          target="_blank"
-          aria-label="Email"
-        >
-          <EnvelopeClosedIcon className="w-6 h-6 hover:text-green-500 hover:rotate-6 duration-150" />
-        </Link>
-        <Link
-          href="https://linkedin.com/in/hafiedzmada"
-          target="_blank"
-          aria-label="LinkedIn profile link"
-        >
-          <LinkedInLogoIcon className="w-6 h-6 hover:text-green-500 hover:rotate-6 duration-150" />
-        </Link>
-        <Link href="https://github.com/ketoprac" target="_blank" id="github">
-          <GitHubLogoIcon className="w-6 h-6 hover:text-green-500 hover:rotate-6 duration-150" />
-        </Link>
-        <Link
-          href="https://instagram.com/hafiedzmada"
-          target="_blank"
-          aria-label="Github profile link"
-        >
-          <InstagramLogoIcon className="w-6 h-6 hover:text-green-500 hover:rotate-6 duration-150" />
-        </Link>
-        <Link
-          href="https://twitter.com/hafiedzmada"
-          target="_blank"
-          aria-label="Twitter profile link"
-        >
-          <TwitterLogoIcon className="w-6 h-6 hover:text-green-500 hover:rotate-6 duration-150" />
-        </Link>
+
+      <div className="pt-4">
+        <h2 className="text-2xl lg:text-3xl font-semibold mb-4 flex items-center gap-2">
+          Let&apos;s Connect! <span className="animate-bounce-slow">👇</span>
+        </h2>
+
+        <div className="flex gap-6">
+          <Link
+            href="mailto:hafiedzmada@gmail.com"
+            target="_blank"
+            aria-label="Email"
+            className="transform hover:scale-110 transition-transform duration-200"
+          >
+            <EnvelopeClosedIcon className="w-7 h-7 hover:text-green-500" />
+          </Link>
+
+          <Link
+            href="https://linkedin.com/in/hafiedzmada"
+            target="_blank"
+            aria-label="LinkedIn profile"
+            className="transform hover:scale-110 transition-transform duration-200"
+          >
+            <LinkedInLogoIcon className="w-7 h-7 hover:text-green-500" />
+          </Link>
+
+          <Link
+            href="https://github.com/ketoprac"
+            target="_blank"
+            aria-label="GitHub profile"
+            className="transform hover:scale-110 transition-transform duration-200"
+          >
+            <GitHubLogoIcon className="w-7 h-7 hover:text-green-500" />
+          </Link>
+
+          <Link
+            href="https://instagram.com/hafiedzmada"
+            target="_blank"
+            aria-label="Instagram profile"
+            className="transform hover:scale-110 transition-transform duration-200"
+          >
+            <InstagramLogoIcon className="w-7 h-7 hover:text-green-500" />
+          </Link>
+
+          <Link
+            href="https://twitter.com/hafiedzmada"
+            target="_blank"
+            aria-label="Twitter profile"
+            className="transform hover:scale-110 transition-transform duration-200"
+          >
+            <TwitterLogoIcon className="w-7 h-7 hover:text-green-500" />
+          </Link>
+
+          <Link
+            href="https://leetcode.com/u/ketoprac"
+            target="_blank"
+            aria-label="LeetCode profile"
+            className="transform hover:scale-110 transition-transform duration-200"
+          >
+            <Image
+              src="/leetcode-svgrepo-com.svg"
+              alt="LeetCode"
+              width={28}
+              height={28}
+              className="hover:text-green-500"
+            />
+          </Link>
+        </div>
       </div>
-    </>
+    </div>
   );
 }

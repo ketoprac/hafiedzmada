@@ -193,4 +193,10 @@ export const books = [
     link: "https://www.goodreads.com/en/book/show/42861019",
     category: "Personal Development",
   },
+  {
+    title: "Thinking, Fast and Slow",
+    author: "Daniel Kahneman",
+    link: "https://www.goodreads.com/book/show/11468377-thinking-fast-and-slow",
+    category: "Personal Development",
+  }
 ];
